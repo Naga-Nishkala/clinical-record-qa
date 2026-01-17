@@ -28,12 +28,13 @@ Patient Query → Filtered Retrieval → LLM Reasoning → Cited Answer
 - `utils/` - Reusable Python utilities
 - `docs/` - Documentation and guides
 
-### 🚀 Technology Stack (100% Free)
-- **LLM**: Google Gemini 2.0 Flash (Free API)
+### 🚀 Technology Stack (100% Free & Local)
+- **LLM**: TinyLlama 1.1B Chat (Local inference, no API)
 - **Embeddings**: sentence-transformers/all-MiniLM-L6-v2
 - **Vector Store**: ChromaDB (local)
-- **De-identification**: Presidio (open-source)
+- **De-identification**: Regex-based PHI removal
 - **Development**: Google Colab + Google Drive
+- **Interface**: Gradio (web UI with shareable links)
 
 ### 📊 MLOps Features
 - Data versioning and lineage tracking
@@ -57,8 +58,7 @@ Patient Query → Filtered Retrieval → LLM Reasoning → Cited Answer
 ### 📅 Project Timeline
 - **Created**: January 2026
 - **Data Version**: v1.0
-- **Status**: Development Phase (Google Drive + Colab)
-- **Next Phase**: GitHub migration
+- **Status**: Development Phase (Google Drive + Colab) with GitHub migration
 
 ### 👤 Author
 Clinical Notes Q&A System Project
