@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Data files (don't commit large datasets)
+*.csv
+*.json
+*.txt
+*.pkl
+*.parquet
+
+# Model files
+*.bin
+*.h5
+*.onnx
+*.pt
+
+# Vector stores
+*.db
+*.sqlite
+chroma_db/
+
+# Environment
+.env
+.env.local
+
+# Google Colab
+.config/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MLOps artifacts
+mlruns/
+experiment_logs/
+
+# Outputs (keep structure, ignore contents)
+outputs/raw_clinical_notes/*
+!outputs/raw_clinical_notes/.gitkeep
+outputs/deidentified_notes/*
+!outputs/deidentified_notes/.gitkeep
+outputs/embeddings/*
+!outputs/embeddings/.gitkeep
+outputs/vector_store/*
+!outputs/vector_store/.gitkeep
+
+# BUT keep README files
+!README.md
+!*/README.md

@@ -1,0 +1,30 @@
+# Model Configuration
+# This file defines all models used in the pipeline
+
+embedding_model:
+  name: "sentence-transformers/all-MiniLM-L6-v2"
+  dimension: 384
+  max_sequence_length: 256
+  device: "cpu"  # Change to "cuda" if GPU available
+
+llm_model:
+  provider: "google"
+  model_name: "gemini-2.0-flash-exp"
+  temperature: 0.3
+  max_tokens: 1000
+  top_p: 0.95
+
+vector_store:
+  type: "chromadb"
+  collection_name: "clinical_notes"
+  distance_metric: "cosine"
+  
+retrieval:
+  top_k: 5
+  similarity_threshold: 0.7
+  rerank: false
+
+chunking:
+  strategy: "semantic"  # Options: semantic, fixed, recursive
+  chunk_size: 512
+  chunk_overlap: 50

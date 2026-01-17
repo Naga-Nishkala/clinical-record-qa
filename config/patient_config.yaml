@@ -1,0 +1,10 @@
+# Patient Configuration
+# This file will be auto-generated after data generation
+
+patients:
+  # Will be populated by notebook 01
+  # Example:
+  # patient_001:
+  #   name: "John Doe"
+  #   conditions: ["Type 2 Diabetes", "Hypertension"]
+  #   num_visits: 4
